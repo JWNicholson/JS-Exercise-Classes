@@ -148,7 +148,7 @@ speak(){
 class Instructor extends Lambdasian{
   constructor(attributes){
     super(attributes)
-    this.specialty = attributes.speciality,
+    this.specialty = attributes.specialty,
     this.favLanguage = attributes.favLanguage,
     this.catchPhrase = attributes.catchPhrase
 
@@ -180,7 +180,25 @@ return `${student} receives a perfect score on ${subject}`;
         + `sprintChallenge` similar to PRAssignment but returns `student.name has begun sprint challenge on {subject}`
 */
 class Student extends Lambdasian {
+  constructor(attributes){
+    super(attributes)
+    this.previousBackground = attributes.previousBackground,
+    this.className = attributes.className,
+    this.favSubjects = attributes.favSubjects,
+    this.subject = attributes.subject
+  }
 
+  listSubjects(){
+    return `${this.favSubjects}`;
+  }
+
+  PRAssignment(subject){
+    return `${this.name} has submitted a PR for ${subject}`;
+  }
+
+  sprintChallenge(subject){
+    return `${this.name} has begun sprint challenge on ${subject}`
+  }
 }
 
 /*
