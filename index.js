@@ -226,7 +226,7 @@ standUp(channel){
 }
 
 debugsCode(student,subject){
-  `${this.name} debugs ${student}'s code on ${subject}`;
+  return `${this.name} debugs ${student}'s code on ${subject}`;
 }
 
 }
