@@ -39,8 +39,13 @@ class Airplane {
     - Give instances of Person a method `.toString()`:
         + It should return a string with `name` and `age`. Example: "Mary, 50"
 */
-
+//Person class has name & age as well as initiating an array called stomach
 class Person {
+  constructor(name,age){
+    this.name = name,
+    this.age = age,
+    this.stomach = []
+  }
 
 }
 
